@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>ESCOLHINHA DO SENAI - MATÉRIA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+    <!--#include virtual="../menu/index.shtml" -->
+  </body>
+</html>

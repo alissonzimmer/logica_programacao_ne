@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>ESCOLHINHA DO SENAI - PESSOA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+		<link href="../../css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+    <!--#include virtual="../menu/index.shtml" -->
+
+	<div class="mt-6 px-4">
+		<div class="flex items-center justify-between px-6">
+		  <h2 class="text-xl font-bold">Cadastro de Pessoa</h2>
+		</div>
+		<div class="mt-4 border rounded-lg p-6">
+		  <form id="form">
+			<input
+				class="hidden"
+				id="id"
+			/>
+			<div class="grid gap-4">
+			  <div class="grid gap-2">
+				<label
+				  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+				  for="name"
+				>
+				  Nome
+				</label>
+				<input
+				  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+				  id="name"
+				  placeholder="Digite o nome"
+				/>
+			  </div>
+			  <div class="grid gap-2">
+				<label
+				  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+				  for="documento"
+				>
+				  CPF/CNPJ
+				</label>
+				<input
+				  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+				  id="documento"
+				  placeholder="Digite o CPF/CNPJ"
+				/>
+			  </div>
+			  <div class="grid gap-2">
+				<label
+				  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+				  for="nascimento"
+				>
+				  Data de Nascimento
+				</label>
+				<input
+				  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+				  id="nascimento"
+				  type="date"
+				/>
+			  </div>
+			  <div class="flex justify-end gap-2">
+                <button class="rounded-md border border-input px-3 py-2" id="cancelar" type="button">Cancelar</button>
+                <button class="rounded-md border border-input px-3 py-2 bg-black text-white" type="submit">Salvar</button>
+              </div>
+			</div>
+		  </form>
+		</div>
+	</div>
+
+</body>
+<script src="../../js/pessoa/cadastro.js"></script>
+</html>
