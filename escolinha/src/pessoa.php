@@ -1,4 +1,5 @@
 <?php
+
 include_once 'db.php';
 
 class Pessoa {
@@ -78,7 +79,13 @@ class Pessoa {
 
         $stm = $this->conn->prepare($sql);
 
-        $stm->bind_param('sssi', $data['nome'], $data['documento'], $data['nascimento'], $id);
+        $stm->bind_param(
+            'sssi', 
+            $data['nome'], 
+            $data['documento'], 
+            $data['nascimento'], 
+            $id
+        );
         $stm->execute();
 
         if ($stm->affected_rows > 0) {
@@ -93,7 +100,12 @@ class Pessoa {
 
         $stm = $this->conn->prepare($sql);
 
-        $stm->bind_param('sss', $data['nome'], $data['documento'], $data['nascimento']);
+        $stm->bind_param(
+            'sss', 
+            $data['nome'], 
+            $data['documento'], 
+            $data['nascimento']
+        );
         $stm->execute();
 
         if ($stm->affected_rows > 0) {
@@ -140,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    if (strpos($_SERVER['HTTP_REFERER'], 'pessoa/cadastro')) {
+    if (isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'pessoa/cadastro')) {
         echo json_encode($pessoa->getById($_GET['id']));
         return;
     }
