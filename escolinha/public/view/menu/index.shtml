@@ -1,3 +1,5 @@
+<!--#include virtual="/public/view/header.php" -->
+
 <nav
   aria-label="Main"
   data-orientation="horizontal"
@@ -44,7 +46,7 @@
           <ul class="py-1">
             <li>
               <a
-                href="../pessoa"
+                href="/public/view/pessoa"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-accent-foreground"
               >
                 Pessoa
@@ -52,7 +54,7 @@
             </li>
             <li>
               <a
-                href="../aluno"
+                href="/public/view/aluno"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-accent-foreground"
               >
                 Aluno
@@ -60,7 +62,7 @@
             </li>
             <li>
               <a
-                href="../curso"
+                href="/public/view/curso"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-accent-foreground"
               >
                 Curso
@@ -68,7 +70,7 @@
             </li>
             <li>
               <a
-                href="../materia"
+                href="/public/view/materia"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-accent-foreground"
               >
                 Matéria
@@ -87,9 +89,19 @@
           Relatórios
         </a>
       </li>
+      <li>
+        <a
+          href="/public/view/logout"
+          class="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+          data-radix-collection-item=""
+          rel="ugc"
+        >
+          Sair
+        </a>
+      </li>
     </ul>
   </div>
   <div class="absolute left-0 top-full flex justify-center"></div>
 </nav>
 
-<script src="../../js/menu/index.js"></script>
+<script src="/public/js/menu/index.js"></script>

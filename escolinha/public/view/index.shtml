@@ -2,10 +2,11 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>ESCOLHINHA DO SENAI - MATÉRIA</title>
+		<title>ESCOLHINHA DO SENAI</title>
         <script src="https://cdn.tailwindcss.com"></script>
+		<link href="/public/css/styles.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
     <!--#include virtual="/public/view/menu/index.shtml" -->
-  </body>
+    </body>
 </html>
